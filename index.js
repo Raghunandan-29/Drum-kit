@@ -52,5 +52,5 @@ function animation(currkey){
     abtn.classList.add("pressed");
     setTimeout(function(){
     abtn.classList.remove("pressed");
-    },1000)
+    },100);
 }
