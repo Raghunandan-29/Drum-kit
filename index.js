@@ -50,5 +50,7 @@ function makeSound(key){
 function animation(currkey){
     var abtn=document.querySelector("."+currkey);
     abtn.classList.add("pressed");
-    
+    setTimeout(function(){
+    abtn.classList.remove("pressed");
+    },1000)
 }
