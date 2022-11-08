@@ -49,6 +49,6 @@ function makeSound(key){
 }
 function animation(currkey){
     var abtn=document.querySelector("."+currkey);
-    abtn.classList.add(.pressed);
+    abtn.classList.add("pressed");
     
 }
