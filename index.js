@@ -3,12 +3,14 @@ for(var i=0;i<nofb;i++){
     document.querySelectorAll(".drum")[i].addEventListener("click",function(){
         var btnc=this.innerHTML;
         makeSound(btnc);
+        animation(btnc);
         
 
     });
 }
 document.addEventListener("keydown",function(event){
    makeSound(event.key);
+   animation(event.key);
 });
 
 function makeSound(key){
@@ -44,4 +46,9 @@ function makeSound(key){
 
     }
 
+}
+function animation(currkey){
+    var abtn=document.querySelector("."+currkey);
+    abtn.classList.add(.pressed);
+    
 }
